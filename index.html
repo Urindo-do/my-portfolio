@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>나의 피지컬 AI 메이커 보드</title>
+    <!-- 내 스타일시트 파일 연결 -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        
+        <!-- 👤 프로필 영역 (내 정보로 자유롭게 고치기) -->
+        <header class="profile">
+            <!-- 💡 [실습 1] 내 이름과 한 줄 소개로 변경해 보세요 -->
+            <h1>🤖 Urindo-do의 메이커 보드</h1>
+            <p>포트폴리오 페이지</p>
+        </header>
+
+        <!-- 🛠️ 프로젝트 카드 목록 (원하는 카드를 추가/삭제해 보세요) -->
+        <main class="project-grid">
+
+            <!-- 1번 프로젝트 카드 (텍스트 + 링크) -->
+            <div class="card">
+                <!-- 💡 [실습 2] 1일차 프로젝트 제목과 소개 내용을 수정해 보세요 -->
+                <h3>🎤 1일차: 소리 감지 AI</h3>
+                <p>구글 티쳐블 머신으로 학습시킨 오디오 인식 인공지능 모델입니다. 박수 소리와 목소리를 구별할 수 있습니다.</p>
+                <!-- 💡 [실습 3] 나의 티쳐블머신 공유 링크를 아래 href에 넣으세요 -->
+                <a href="https://teachablemachine.withgoogle.com/" target="_blank">AI 모델 열기 &rarr;</a>
+            </div>
+
+            <!-- 2번 프로젝트 카드 (이미지 + 텍스트 + 링크) -->
+            <div class="card">
+                <!-- 💡 [실습 4] 이미지 주소(src)를 내가 가지고 있는 'robot.jpg'로 변경해 보세요 -->
+                <img src="https://images.unsplash.com/photo-1555664424-778a1e5e1b48?auto=format&fit=crop&w=600&q=80" alt="회로 캡처">
+                <h3>🔌 2일차: 가상 회로 시뮬레이터</h3>
+                <p>Tinkercad를 활용해 브레드보드 회로를 설계했습니다. 조도 센서 값에 따라 자동으로 LED 불빛을 제어합니다.</p>
+                <a href="https://www.tinkercad.com/" target="_blank">회로 보기 &rarr;</a>
+            </div>
+
+            <!-- 3번 프로젝트 카드 (유튜브 영상 + 텍스트 + 링크) -->
+            <div class="card">
+                <!-- 💡 [실습] 유튜브 공유 주소 뒷부분 ID값(예: K7qPq8E2d8I)을 아래 src 끝에 넣으세요 -->
+                <iframe src="https://www.youtube.com/embed/K7qPq8E2d8I" allowfullscreen></iframe>
+                <h3>🎥 6일차: ESP32 실물 로봇 작동</h3>
+                <p>현실 세계의 ESP32 제어 보드와 서보모터 관절을 조립하여 인공지능 신호에 따라 움직이도록 만들었습니다.</p>
+                <a href="https://youtu.be/K7qPq8E2d8I" target="_blank">유튜브 영상 보기 &rarr;</a>
+            </div>
+
+            <!-- 4번 테스트 추가 프로젝트 카드 (유튜브 영상 + 텍스트 + 링크) -->
+            <div class="card">
+                <h3>티쳐블 머신 비전</h3>
+                <p>티쳐블 머신으로 가위,바위,보 학습</p>
+                <a href="https://teachablemachine.withgoogle.com/models/rzsmgT4iT/" target="_blank">티쳐블 머신 링크 &rarr;</a>
+            </div>
+            
+            <div class="card">
+                <h3>티쳐블 머신 오디오</h3>
+                <p>티쳐블 머신으로 켜기 끄기학습</p>
+                <a href="https://teachablemachine.withgoogle.com/models/aKbmYwtxK/" target="_blank">티쳐블 머신 링크 &rarr;</a>
+            </div>
+        </main>
+    </div>
+
+    <!-- ==========================================================================
+      [💡 메이커 조립 팁: 카드 복사해서 추가하기]
+      새로운 프로젝트를 추가하고 싶을 때, 아래 원하는 모양의 코드 블록을 복사해서
+      <main class="project-grid"> ... </main> 태그 사이에 붙여넣으세요!
+      
+      --------------------------------------------------------------------------
+      모양 A: 글씨만 있는 심플 카드
+      --------------------------------------------------------------------------
+      <div class="card">
+          <h3>제목 적기</h3>
+          <p>여기에 본문 설명을 자유롭게 작성합니다.</p>
+          <a href="링크 주소" target="_blank">바로가기 &rarr;</a>
+      </div>
+      
+      --------------------------------------------------------------------------
+      모양 B: 이미지(사진/GIF)가 들어가는 카드
+      --------------------------------------------------------------------------
+      <div class="card">
+          <img src="이미지 파일명.jpg" alt="설명">
+          <h3>제목 적기</h3>
+          <p>여기에 본문 설명을 자유롭게 작성합니다.</p>
+          <a href="링크 주소" target="_blank">바로가기 &rarr;</a>
+      </div>
+      ========================================================================== -->
+</body>
+</html>

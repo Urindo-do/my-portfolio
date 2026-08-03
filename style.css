@@ -1,0 +1,121 @@
+/* ==========================================================================
+   Physical AI Maker Board - Simple CSS Style
+   Developed by Team Monolith
+   ========================================================================== */
+
+/* 
+   🎨 [나만의 테마 커스텀!]
+   아래 5가지 기본 테마 색상을 변경하면 내 사이트의 분위기가 1초 만에 바뀝니다.
+   좋아하는 색상 코드(Hex Code)로 변경해서 나만의 보드를 만들어 보세요!
+*/
+:root {
+    --bg-color: #0f172a;       /* 전체 배경색 */
+    --card-color: #1e293b;     /* 개별 카드 배경색 */
+    --text-color: #f8fafc;     /* 글자 색상 */
+    --accent-color: #6366f1;   /* 강조 테마 컬러 (Indigo) */
+    --accent-hover: #a855f7;   /* 호버 시 테마 컬러 (Purple) */
+}
+
+/* 1. 기본 마진/패딩 초기화 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 2. 전체 페이지 스타일 */
+body {
+    font-family: system-ui, -apple-system, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    padding: 60px 20px;
+}
+
+/* 중앙 정렬용 큰 바구니 */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* 3. 상단 프로필 소개 영역 */
+.profile {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.profile h1 {
+    font-size: 2.2rem;
+    font-weight: 800;
+    margin-bottom: 8px;
+    letter-spacing: -0.5px;
+}
+
+.profile p {
+    color: var(--accent-color);
+    font-weight: 700;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+}
+
+/* 4. 프로젝트 카드들이 배치되는 격자판 (그리드) */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+}
+
+/* 5. 개별 카드 스타일 */
+.card {
+    background-color: var(--card-color);
+    border-radius: 16px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* 마우스 올렸을 때 애니메이션 */
+.card:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent-color);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* 카드 내 이미지 및 유튜브 프레임 크기 맞추기 */
+.card img, .card iframe {
+    width: 100%;
+    height: 170px;
+    border-radius: 8px;
+    object-fit: cover;
+    border: none;
+}
+
+.card h3 {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.card p {
+    font-size: 0.9rem;
+    color: #94a3b8; /* 설명용 연회색 글자 */
+    flex-grow: 1;   /* 글이 짧아도 아래 링크 버튼이 동일선상에 내려가도록 조절 */
+}
+
+/* 6. 카드 내부 아래쪽 링크 버튼 */
+.card a {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.85rem;
+    align-self: flex-start;
+    transition: color 0.2s ease, transform 0.2s ease;
+    margin-top: 10px;
+}
+
+.card a:hover {
+    color: var(--accent-hover);
+    transform: translateX(4px);
+}
