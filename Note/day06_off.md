@@ -244,7 +244,7 @@ void loop() {
 브레드보드 위에 ESP32-S3를 얹고, LED·저항·점퍼선으로 회로를 구성한 모습.
 보드 내장 RGB LED(흰색)와 외부 노란 LED가 함께 켜진 상태.
 
-![오늘 실습한 ESP32-S3 브레드보드 회로](images/breadboard_setup.jpg)
+![오늘 실습한 ESP32-S3 브레드보드 회로](breadboard_setup.jpg)
 
 ---
 
